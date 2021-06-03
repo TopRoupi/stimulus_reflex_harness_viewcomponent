@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 CableReady.configure do |config|
+  config.on_failed_sanity_checks = :warn
   # Enable/disable exiting / warning when the sanity checks fail options:
   # `:exit` or `:warn` or `:ignore`
 
