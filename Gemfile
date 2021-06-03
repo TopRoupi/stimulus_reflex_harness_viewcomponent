@@ -12,7 +12,7 @@ gem "hiredis"
 gem "devise"
 gem "view_component", require: "view_component/engine"
 
-gem "stimulus_reflex", github: "hopsoft/stimulus_reflex", branch: "master"
+gem "stimulus_reflex", "~> 3.4.1"
 gem "cable_ready", github: "hopsoft/cable_ready", branch: "master"
 
 group :development, :test do
