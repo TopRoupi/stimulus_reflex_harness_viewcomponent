@@ -1,5 +1,19 @@
 <button data-reflex="click->Example#test">Test</button>
 
-<% if @stimulus_reflex %>
-  <h1>Success! Random: <%= (rand * 100).to_i %></h1>
-<% end %>
+<br>
+<br>
+view_component rendered by the view:
+<%= render(TestComponent.new()) %>
+
+<br>
+<br>
+view_component rendered by reflex:
+<div id="render_here">
+</div>
+
+<br>
+current_user id : <%= current_user.id if current_user %>
+<br>
+<%= link_to "login", new_user_session_path %>
+<br>
+<%= link_to "logout", destroy_user_session_path, method: :delete %>

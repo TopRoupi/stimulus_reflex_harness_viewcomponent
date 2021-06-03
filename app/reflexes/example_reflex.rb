@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 class ExampleReflex < ApplicationReflex
-  delegate :uuid, to: :connection
-
   def test
-    puts "We're live!"
+    puts "morph"
+
+    morph("#render_here", render(TestComponent.new()))
   end
 end
