@@ -10,7 +10,6 @@ gem 'webpacker', '~> 5.4'
 gem "redis", ">= 4.2.5", :require => ["redis", "redis/connection/hiredis"]
 gem "hiredis"
 gem "devise"
-gem "view_component", require: "view_component/engine"
 
 gem "stimulus_reflex", "~> 3.4.1"
 gem "cable_ready", github: "hopsoft/cable_ready", branch: "master"
